@@ -45,6 +45,7 @@ temp_dict = {}
 # [{'provider_name': 'Level3', 'primary_server': '209.244.0.3'}, ...]
 #atul <YOUR CODE HERE>
 for Provider in range(LengthOfProviders):
+       temp_dict = {}
        temp_dict['provider_name'] = providers[Provider]
        temp_dict['primary_server'] = ips[Provider]
        print(f'{temp_dict}')

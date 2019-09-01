@@ -57,6 +57,90 @@ secondary_ips = [
     {"provider": "Cloudflare", "ip": "1.0.0.1"}
 ]
 
+
+####################################
+### Part 1 - Provider Dictionary ###
+####################################
+DNS_dictionary = {}
+
+# Use a for loop to create a dictionary mapping the provider names to their IPs. expected output: {'Level3': '209.244.0.3', ...}
+#<YOUR CODE HERE>
+temp_dict = {}
+#temp = [] 
+#print(f' this secondary {secondary_ips}')
+ttyl = [] 
+# ind=1
+for value in secondary_ips:
+    temp_dict = value
+    
+    ttytemp=temp_dict['ip']
+    
+    
+    # ind = ind + 1 
+    ttyl.extend({ttytemp})
+    
+print(f'{ttyl[1]}')
+print(f'length of providers {len(providers)}')
+print(f'length of secondary {len(ttyl)}')
+LengthOfProviders=len(providers)
+for Provider in range(LengthOfProviders):
+       print(f'provider is at {Provider} {providers[Provider]} ips {ips[Provider]}')
+       DNS_dictionary[providers[Provider]] = ips[Provider]
+
+print("DNS Dictionary: ")
+print(DNS_dictionary)
+print("--------")
+
+# Use the dictionary to print Hurricane Electric's IP
+print("Hurricane Electric's IP is: |" + DNS_dictionary['Hurricane Electric']+"|")
+print("--------")
+print("--------")
+
+
+##################################
+### Part 2 - List of Providers ###
+##################################
+DNS_dictionaries = []
+temp_dict = {}
+
+# Use a for loop to create a list of dictionaries with the associated information. expected output: 
+# [{'provider_name': 'Level3', 'primary_server': '209.244.0.3'}, ...]
+#atul <YOUR CODE HERE>
+ry = len(ttyl)
+for Provider in range(LengthOfProviders):
+       temp_dict = {}
+       temp_dict['provider_name'] = providers[Provider]
+       temp_dict['primary_server'] = ips[Provider]
+       if (Provider < ry) :
+           temp_dict['secondary_server'] = ttyl[Provider]
+       print(f'{temp_dict}')
+       DNS_dictionaries.append(temp_dict)
+print("DNS Dictionaries: ")
+print(DNS_dictionaries)
+
+print("--------")
+
+# Use the list to print the total number of providers
+print("Number of providers: "+ str(len(DNS_dictionaries)))
+print("--------")
+print("--------")
+#temp_dict = {}
+#temp = [] 
+#print(f' this secondary {secondary_ips}')
+# ttyl = [] 
+# ind=0
+# for value in secondary_ips:
+#     temp_dict = value
+    
+#     ttytemp=temp_dict['ip']
+    
+    
+#     ind = ind + 1 
+#     ttyl.extend({ttytemp})
+    
+# print(f'{ttyl[1]}')
+#print(DNS_dictionaries)
+#print(temp)
 # Use a for loop to update your dictionary from part 1 with the new IPs
 
     # set provider value in dictionary to array of IPs (new and old)
@@ -68,3 +152,4 @@ secondary_ips = [
 #######################################################
 
 # Use nested for loops to update the list from part 2 with a "secondary_server" key.
+#print(f'secondary array {len(ttyl) original arraay '{len(DNS_dictionaries)}')
