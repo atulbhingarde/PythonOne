@@ -13,7 +13,7 @@ ips = ["209.244.0.3", "64.6.64.6", "8.8.8.8", "9.9.9.9", "84.200.69.80",
 
 
 ####################################
-### Part 1 - Provider Dictionary ###
+### Part 1 - Provider Dictionary ### test
 ####################################
 
 # Use a for loop to create a dictionary mapping the provider names to their IPs
@@ -124,23 +124,6 @@ print("--------")
 print("Number of providers: "+ str(len(DNS_dictionaries)))
 print("--------")
 print("--------")
-#temp_dict = {}
-#temp = [] 
-#print(f' this secondary {secondary_ips}')
-# ttyl = [] 
-# ind=0
-# for value in secondary_ips:
-#     temp_dict = value
-    
-#     ttytemp=temp_dict['ip']
-    
-    
-#     ind = ind + 1 
-#     ttyl.extend({ttytemp})
-    
-# print(f'{ttyl[1]}')
-#print(DNS_dictionaries)
-#print(temp)
 # Use a for loop to update your dictionary from part 1 with the new IPs
 
     # set provider value in dictionary to array of IPs (new and old)
