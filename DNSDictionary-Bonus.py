@@ -1,3 +1,13 @@
+def GetTot(ThisList,thisProvider):
+    
+    found = False
+    return_ip=""
+    for thisPrimary in ThisList:
+        if ( not found ) :
+            # print(f'{thisPrimary["provider"]}')
+            found = thisProvider in thisPrimary["provider_name"]
+            if ( found ): return_ip= thisPrimary
+    return(return_ip)    
 def GetSecondaryIP(ThisList,thisProvider):
     
     found = False
@@ -159,5 +169,5 @@ print("--------")
 
 # Use nested for loops to update the list from part 2 with a "secondary_server" key.
 #print(f'secondary array {len(ttyl) original arraay '{len(DNS_dictionaries)}')
-yy = GetSecondaryIP(secondary_ips,"Verisign")
+yy = GetTot(DNS_dictionaries,"Google")
 print(yy)

@@ -63,6 +63,7 @@ Open up the `Unsolved/DNSDictionary.py` file. For each step, accomplish the foll
    - The IPs should be in the form of an array of IPs.
 
    - Print Google's IPs using the dictionary.
+![google primary and secondary ](goog_prim_sec.png)
 
 4. Use nested `for` loops to update the list from part 2 with a `'secondary_server'` key.
 
