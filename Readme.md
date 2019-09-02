@@ -28,7 +28,7 @@ Open up the `Unsolved/DNSDictionary.py` file. For each step, accomplish the foll
         ```
 
    - Print Hurricane Electric's IPs using the dictionary.
-
+![hurricane ip](Hurricane_ip.png)
 2. Use a `for` loop to create a list of dictionaries with the associated information.
 
    - For example, two entries in the list would look like:

@@ -18,11 +18,13 @@ ips = ["209.244.0.3", "64.6.64.6", "8.8.8.8", "9.9.9.9", "84.200.69.80",
 DNS_dictionary = {}
 
 # Use a for loop to create a dictionary mapping the provider names to their IPs. expected output: {'Level3': '209.244.0.3', ...}
-#<YOUR CODE HERE>
-print(f'length of providers {len(providers)}')
+
+# calculate the length for once using a len function 
+# avoid using same function again and again in the foor loop to avoid the overhead
+# ofcourse assuming that the providers length is not changing dynamically or specifically in the loop
 LengthOfProviders=len(providers)
 for Provider in range(LengthOfProviders):
-       print(f'provider is at {Provider} {providers[Provider]} ips {ips[Provider]}')
+       # print(f'provider is at {Provider} {providers[Provider]} ips {ips[Provider]}')
        DNS_dictionary[providers[Provider]] = ips[Provider]
 
 print("DNS Dictionary: ")
@@ -43,12 +45,12 @@ temp_dict = {}
 
 # Use a for loop to create a list of dictionaries with the associated information. expected output: 
 # [{'provider_name': 'Level3', 'primary_server': '209.244.0.3'}, ...]
-#atul <YOUR CODE HERE>
+
 for Provider in range(LengthOfProviders):
        temp_dict = {}
        temp_dict['provider_name'] = providers[Provider]
        temp_dict['primary_server'] = ips[Provider]
-       print(f'{temp_dict}')
+ 
        DNS_dictionaries.append(temp_dict)
 print("DNS Dictionaries: ")
 print(DNS_dictionaries)
