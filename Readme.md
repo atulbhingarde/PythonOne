@@ -83,8 +83,10 @@ Open up the `Unsolved/DNSDictionary.py` file. For each step, accomplish the foll
             }
         ]
         ```
+![ppring for list](pprint_for_list.png)
 
 5. Super Bonus: use the `pprint` module to print the dictionary and list more elegantly. This will take a lot of research, but we will cover this in a future class.
+![pprint_for_list ](pprint_for_list.png)
 
 ---
 

@@ -1,3 +1,21 @@
+import pprint
+def GetList(ThisList,thisProvider):
+    yy=thisProvider.split(",")
+    buildStruct = []
+    for MyIndex in range(len(yy)):
+        found = False
+        #print(f'{yy[MyIndex]}')
+    
+        return_ip=""
+        for thisPrimary in ThisList:
+            if ( not found ) :
+                # print(f'{thisPrimary}')
+                found = yy[MyIndex] in thisPrimary["provider_name"]
+                if ( found ): 
+                    buildStruct.append(thisPrimary)
+                    #print(f' this is it {buildStruct}')
+
+    return(buildStruct)    
 def GetTot(ThisList,thisProvider):
     
     found = False
@@ -171,3 +189,7 @@ print("--------")
 #print(f'secondary array {len(ttyl) original arraay '{len(DNS_dictionaries)}')
 yy = GetTot(DNS_dictionaries,"Google")
 print(yy)
+mylist="Level3,Verisign"
+yy = GetList(DNS_dictionaries,mylist)
+#print(f'{yy}')
+pprint.pprint(yy)
