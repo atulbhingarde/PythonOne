@@ -116,12 +116,11 @@ temp_dict = {}
 
 # Use a for loop to create a list of dictionaries with the associated information. expected output: 
 # [{'provider_name': 'Level3', 'primary_server': '209.244.0.3'}, ...]
-#atul <YOUR CODE HERE>
-#secondary_ips.index('value')
+
 ry = len(ttyl)
-# sec_keys=secondary_ips.
+
 print(f'one moe {secondary_ips[1].values()}')
-#print(f'seconary keys {sec_keys}')
+
 print(f'secondary_type is of {type(secondary_ips)}')
 for Provider in range(LengthOfProviders):
        temp_dict = {}
@@ -137,19 +136,7 @@ for Provider in range(LengthOfProviders):
            temp_dict['secondary_server'] = LocSecIp
            print(f'after addig {temp_dict}')
         
-       # yyy=in secondary_ips
-       #print(f'here 1 {tp} {{tp} in secondary_ips[str({tp})]}')
-    #    if ('provider',tp) in secondary_ips.provider:
-    #        print(f'{tp} is there ')
-    #    else:
-    #        print(f'{tp} is not there')
-    # 
-    #    LocSecIp=GetSecondaryIP(secondary_ips,providers[Provider])
-    #    print(LocSecIp)
-    #    if ( LocSecIp != ""  ): temp_dict['secondary_server'] = LocSecIp
-    #if (Provider < ry) :
-    #        temp_dict['secondary_server'] = ttyl[Provider]
-       #print(f'{temp_dict}')
+    
        DNS_dictionaries.append(temp_dict)
 print("DNS Dictionaries: ")
 print(DNS_dictionaries)

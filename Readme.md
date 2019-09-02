@@ -46,7 +46,7 @@ Open up the `Unsolved/DNSDictionary.py` file. For each step, accomplish the foll
         ]
         ```
    - Print the total number of providers using the list.
-
+![total providers](total_providers.png)
 ### Bonuses
 
 3. Use a `for` loop to update your dictionary from part 1 with the new IPs.
