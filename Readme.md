@@ -127,3 +127,4 @@ Now that we know how to check to see if a user is logging in with admin credenti
 6. Once the user logs in with admin credentials, print to the terminal the string `"YOU HAVE LOGGED IN!"`.
 
 3. Run the code often as you write and test individual functions with correct and incorrect admin credentials to make sure you're on the right path!
+![admin control ](useridpass.png)
